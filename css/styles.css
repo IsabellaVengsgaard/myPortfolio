@@ -78,9 +78,9 @@ a {
     color: var(--link-color);
 }
 
-#heroText {
+.isabella {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -88,11 +88,6 @@ a {
 
 /*-------------------hero image buttons styles----------------------*/
 
-#heroText {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-}
 
 #buttonStyles {
     text-decoration: none;
@@ -100,6 +95,11 @@ a {
     text-align: center;
     display: flex;
     align-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 #buttonStyles {
@@ -130,8 +130,38 @@ a {
 
 
 /*---------------------Omkring mig styles--------------------------*/
+#aboutBella {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: darkgray;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.picture {
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+    background-color: lightcoral;
+}
 
-#aboutBella {}
+.aboutMe {
+    width: 100%;
+    background-color: skyblue;
+    margin-top: 40px;
+
+}
+
+.aboutMe h2 {
+    text-align: center;
+}
+
+.aboutMe p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /*---------------------Footer styles------------------------------*/
@@ -144,12 +174,17 @@ footer {}
 @media (min-width: 725px) {
 
     /*---------------------hero image tablet styles--------------------------*/
+    
+    /*---------------------about me styles--------------------------*/
+    .aboutMe {
+        width: 60%;
+    }
 
 }
 
 
 /*---------------------laptop styles--------------------------*/
-@media (min-width:1025px) {
+@media (min-width:950px) {
 
     /*-------------denne er for at burgermenuen ikke vises på laptop størrelse----------------*/
     #contentmobile {
@@ -176,5 +211,13 @@ footer {}
     }
 
     /*---------------------hero image laptop styles--------------------------*/
+    
+    .aboutBella {
+        display: flex;
+    }
+    .aboutMe {
+        width: 50%;
+        order: 2;
+    }
 
 }

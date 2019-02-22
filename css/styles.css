@@ -1,6 +1,7 @@
 /*-----------------------Global styles----------------------------*/
 :root {
-    --main-color:
+    --main-color: lightblue;
+    --link-color: lightcoral;
 }
 
 body {
@@ -41,7 +42,7 @@ body {
 }
 
 .nav a:hover {
-    color: lightcoral;
+    color: var(--link-color);
     transition: 0.4s;
 }
 
@@ -63,7 +64,7 @@ body {
 }
 
 .slide i:hover {
-    color: lightcoral;
+    color: var(--link-color);
     transition: 0.4s;
 }
 
@@ -74,7 +75,7 @@ body {
 }
 
 a {
-    color: var(--main-color);
+    color: var(--link-color);
 }
 
 #heroText {
@@ -90,6 +91,7 @@ a {
 #heroText {
     display: flex;
     flex-direction: column;
+    align-content: space-between;
 }
 
 #buttonStyles {
@@ -101,7 +103,7 @@ a {
 }
 
 #buttonStyles {
-    
+
 }
 
 #mitArbejdeButton {
@@ -110,6 +112,8 @@ a {
     border: none;
     text-decoration: none;
     border-radius: 10px;
+    /*margin-right: 10px;*/
+    cursor: pointer;
 }
 
 #omMigButton {
@@ -118,19 +122,10 @@ a {
     background-color: #e7c7c7;
     text-decoration: none;
     border-radius: 10px;
+    /**margin-left: 10px;*/
+    cursor: pointer;
 }
 
-
-#mitArbejdeButton a:hover {
-    text-decoration: none;
-    color: #7D0B48;
-    transition-duration: 0.5s;
-}
-
-#omMigButton a:hover {
-    text-decoration: none;
-    color: #7D0B48;
-}
 
 
 

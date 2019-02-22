@@ -1,0 +1,185 @@
+/*-----------------------Global styles----------------------------*/
+:root {
+    --main-color:
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/*------------Denne er for at laptop menu styles ikke vise på mobil størrelsen-------------------*/
+#menu {
+    display: none;
+}
+
+/*---------------------mobilmenu--------------------------*/
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .9;
+    overflow-x: hidden;
+    padding-top: 40px;
+    transition: 0.7s;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav a {
+    margin-left: 20px;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav a:hover {
+    color: lightcoral;
+    transition: 0.4s;
+}
+
+.nav .close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin-left: 30px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#contentmobile {
+    padding: 20px;
+    transition: margin-left 0.7s;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+}
+
+.slide i:hover {
+    color: lightcoral;
+    transition: 0.4s;
+}
+
+
+/*-------------------------hero image styles-----------------------*/
+#bella {
+    width: 100%;
+}
+
+a {
+    color: var(--main-color);
+}
+
+#heroText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*-------------------hero image buttons styles----------------------*/
+
+#heroText {
+    display: flex;
+    flex-direction: column;
+}
+
+#buttonStyles {
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    display: flex;
+    align-content: space-between;
+}
+
+#buttonStyles {
+    
+}
+
+#mitArbejdeButton {
+    padding: 10px 20px;
+    background-color: #cc9797;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#omMigButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e7c7c7;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+#mitArbejdeButton a:hover {
+    text-decoration: none;
+    color: #7D0B48;
+    transition-duration: 0.5s;
+}
+
+#omMigButton a:hover {
+    text-decoration: none;
+    color: #7D0B48;
+}
+
+
+
+/*---------------------Omkring mig styles--------------------------*/
+
+#aboutBella {}
+
+
+/*---------------------Footer styles------------------------------*/
+
+footer {}
+
+
+
+/*---------------------tablet styles--------------------------*/
+@media (min-width: 725px) {
+
+    /*---------------------hero image tablet styles--------------------------*/
+
+}
+
+
+/*---------------------laptop styles--------------------------*/
+@media (min-width:1025px) {
+
+    /*-------------denne er for at burgermenuen ikke vises på laptop størrelse----------------*/
+    #contentmobile {
+        display: none;
+    }
+
+
+    /*---------------Laptop menu styles--------------------*/
+    #menu {
+        display: block;
+        position: absolute;
+        padding-top: 3%;
+        width: 100%;
+    }
+
+    #menu a {
+        margin: 5%;
+        text-decoration-line: none;
+    }
+
+    a:hover {
+        color: lightcoral;
+
+    }
+
+    /*---------------------hero image laptop styles--------------------------*/
+
+}

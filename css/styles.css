@@ -10,6 +10,18 @@ body {
 }
 
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+p, a, button {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
 /*------------Denne er for at laptop menu styles ikke vise på mobil størrelsen-------------------*/
 #menu {
     display: none;
@@ -30,6 +42,7 @@ body {
     transition: 0.7s;
     display: flex;
     flex-direction: column;
+
 }
 
 .nav a {
@@ -39,12 +52,12 @@ body {
     font-size: 20px;
     text-decoration: none;
     color: white;
+    transition: color 0.5s ease-out;
 
 }
 
 .nav a:hover {
     color: var(--link-color);
-    transition: 0.4s;
 }
 
 .nav .close {
@@ -64,9 +77,12 @@ body {
     position: absolute;
 }
 
+.slide i {
+    transition: color 0.5s ease-out;
+}
+
 .slide i:hover {
     color: var(--link-color);
-    transition: 0.4s;
 }
 
 
@@ -90,40 +106,19 @@ a {
 /*-------------------hero image buttons styles----------------------*/
 
 
-#buttonStyles {
-    text-decoration: none;
-    font-size: 17px;
-    text-align: center;
-    display: flex;
-    align-content: space-between;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-#buttonStyles {}
-
 #mitArbejdeButton {
-    padding: 10px 20px;
+    padding: 10px 50px;
     background-color: #cc9797;
     border: none;
     text-decoration: none;
     border-radius: 10px;
     /*margin-right: 10px;*/
     cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
 }
 
-#omMigButton {
-    padding: 10px 20px;
-    border: none;
-    background-color: #e7c7c7;
-    text-decoration: none;
-    border-radius: 10px;
-    /**margin-left: 10px;*/
-    cursor: pointer;
-}
 
 
 
@@ -148,7 +143,6 @@ a {
 
 .aboutMe {
     width: 100%;
-    background-color: skyblue;
     margin-top: 40px;
 
 }
@@ -171,7 +165,7 @@ footer {
     color: whitesmoke;
     width: 100%;
     height: 200px;
-    
+    text-align: center;
 }
 
 footer h3 {
@@ -179,8 +173,34 @@ footer h3 {
     padding-top: 15px;
 }
 
+.boxStyle {
+    border-style: solid;
+    border-color: var(--link-color);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    transition: background-color 0.5s ease-out;
+}
 
+footer a:hover {
+    text-decoration: none;
+    background-color: var(--link-color);
+    color: white;
+}
 
+.boxStyle {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.footName {
+    margin-top: 40px;
+    color: darkgrey;
+    font-size: 8px;
+}
 
 /*---------------------tablet styles--------------------------*/
 @media (min-width: 725px) {

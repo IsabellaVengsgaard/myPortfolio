@@ -1,7 +1,7 @@
 /*-----------------------Global styles----------------------------*/
 :root {
     --main-color: lightblue;
-    --link-color: lightcoral;
+    --link-color: rgb(233, 179, 179);
     --dark-color: rgb(84, 84, 84);
 }
 
@@ -163,6 +163,21 @@ a {
     color: white;
 }
 
+
+/*---------------------about page styles------------------------------*/
+.aboutIsabella {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 25px;
+}
+
+#mainAbout img{
+    width: 100%;
+    margin-top: 20px;
+}
 
 
 /*---------------------Footer styles------------------------------*/

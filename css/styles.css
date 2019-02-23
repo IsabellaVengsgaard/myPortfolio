@@ -19,9 +19,12 @@ h5 {
 }
 
 
-p, a, button {
+p,
+a,
+button {
     font-family: 'Open Sans Condensed', sans-serif;
 }
+
 /*------------Denne er for at laptop menu styles ikke vise på mobil størrelsen-------------------*/
 #menu {
     display: none;
@@ -106,30 +109,12 @@ a {
 /*-------------------hero image buttons styles----------------------*/
 
 
-#mitArbejdeButton {
-    padding: 10px 50px;
-    background-color: #cc9797;
-    border: none;
-    text-decoration: none;
-    border-radius: 10px;
-    /*margin-right: 10px;*/
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 17px;
-    text-align: center;
-}
-
-
-
-
-
 /*---------------------Omkring mig styles--------------------------*/
 #aboutBella {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
     justify-content: space-around;
-    background-color: darkgray;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -157,6 +142,28 @@ a {
     margin-right: auto;
 }
 
+.boxStyle2 {
+    border-style: solid;
+    border-color: var(--link-color);
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    color: black;
+    transition: background-color 0.5s ease-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutMe a:hover {
+    text-decoration: none;
+    background-color: var(--link-color);
+    color: white;
+}
+
+
 
 /*---------------------Footer styles------------------------------*/
 
@@ -177,6 +184,7 @@ footer h3 {
     border-style: solid;
     border-color: var(--link-color);
     border-radius: 20px;
+    width: 150px;
     padding: 10px;
     text-align: center;
     display: inline-block;
@@ -187,8 +195,10 @@ footer h3 {
 footer a:hover {
     text-decoration: none;
     background-color: var(--link-color);
-    color: white;
+    color: black;
 }
+
+
 
 .boxStyle {
     margin-left: 10px;

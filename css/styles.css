@@ -2,6 +2,7 @@
 :root {
     --main-color: lightblue;
     --link-color: lightcoral;
+    --dark-color: rgb(84, 84, 84);
 }
 
 body {
@@ -75,7 +76,7 @@ body {
 }
 
 a {
-    color: var(--link-color);
+    color: black;
 }
 
 .isabella {
@@ -166,7 +167,13 @@ a {
 
 /*---------------------Footer styles------------------------------*/
 
-footer {}
+footer {
+    background-color: var(--dark-color);
+    color: whitesmoke;
+    width: 100%;
+    height: 200px;
+}
+
 
 
 

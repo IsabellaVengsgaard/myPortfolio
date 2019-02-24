@@ -86,6 +86,7 @@ button {
 
 .slide i {
     transition: color 0.5s ease-out;
+    color: white;
 }
 
 .slide i:hover {
@@ -104,17 +105,55 @@ a {
 
 .isabella {
     position: absolute;
-    top: 30%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    color: white;
+}
+
+.isabella p {
+    font-size: 18px;
 }
 
 .isabella h1 {
     color: white;
+    font-size: 25px;
 }
 
-/*-------------------hero image buttons styles----------------------*/
+/*-------------------hero image animation styles----------------------*/
+.angleDown i {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    animation: jump 2s ease-in-out infinite;
+}
+
+@keyframes jump {
+    0% {
+        
+    }
+
+    25% {
+        
+    }
+
+    50% {
+        
+    }
+
+    75% {
+        
+    }
+
+    100% {
+        
+    }
+}
+
 
 
 /*---------------------Omkring mig styles--------------------------*/
@@ -142,6 +181,7 @@ a {
 
 .aboutMe h2 {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .aboutMe p {
@@ -151,6 +191,7 @@ a {
 }
 
 .boxStyle2 {
+    margin-top: 25px;
     border-style: solid;
     border-color: var(--link-color);
     border-radius: 20px;
@@ -287,6 +328,8 @@ input[type=submit]:hover {
     width: 100%;
     height: 200px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #footerBella h3 {
@@ -298,8 +341,9 @@ input[type=submit]:hover {
     border-style: solid;
     border-color: var(--link-color);
     border-radius: 20px;
-    width: 150px;
+    width: 200px;
     padding: 10px;
+    margin-bottom: 20px;
     text-align: center;
     display: inline-block;
     color: white;
@@ -324,15 +368,28 @@ input[type=submit]:hover {
     font-size: 8px;
 }
 
+#footerBella i {
+    font-size: 30px
+}
+
+.footerIcons {
+    
+}
 /*---------------------tablet styles--------------------------*/
 @media (min-width: 725px) {
 
     /*---------------------hero image tablet styles--------------------------*/
 
+    .isabella h1 {
+        color: white;
+        font-size: 40px;
+    }
+
     /*---------------------about me styles--------------------------*/
     .aboutMe {
         width: 60%;
     }
+
 
 }
 
@@ -373,6 +430,11 @@ input[type=submit]:hover {
     .aboutMe {
         width: 50%;
         order: 2;
+    }
+
+    .isabella h1 {
+        color: white;
+        font-size: 40px;
     }
 
 }

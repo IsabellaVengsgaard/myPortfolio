@@ -404,20 +404,37 @@ input[type=submit]:hover {
 
 
     /*---------------Laptop menu styles--------------------*/
+    .menuForside {
+        color: white;
+    }
+    .menuBlock {
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        border-style: solid;
+        border-color: white;
+        border-bottom-color: black;
+        border-width: thin;
+    }
     #menu {
         display: block;
         position: absolute;
-        padding-top: 3%;
         width: 100%;
+        display: flex;
+        justify-content: flex-end;
     }
 
     #menu a {
-        margin: 5%;
+        margin-top: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
         text-decoration-line: none;
+        color: black;
+        transition: color 0.5s ease-out;
     }
 
-    a:hover {
-        color: lightcoral;
+    #menu a:hover {
+        color: var(--link-color);
 
     }
 
@@ -435,6 +452,10 @@ input[type=submit]:hover {
     .isabella h1 {
         color: white;
         font-size: 40px;
+    }
+    
+    #kontaktForm {
+        width: 60%
     }
 
 }

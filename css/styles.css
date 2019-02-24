@@ -133,25 +133,15 @@ a {
 }
 
 @keyframes jump {
-    0% {
-        
-    }
+    0% {}
 
-    25% {
-        
-    }
+    25% {}
 
-    50% {
-        
-    }
+    50% {}
 
-    75% {
-        
-    }
+    75% {}
 
-    100% {
-        
-    }
+    100% {}
 }
 
 
@@ -372,9 +362,8 @@ input[type=submit]:hover {
     font-size: 30px
 }
 
-.footerIcons {
-    
-}
+.footerIcons {}
+
 /*---------------------tablet styles--------------------------*/
 @media (min-width: 725px) {
 
@@ -407,6 +396,7 @@ input[type=submit]:hover {
     .menuForside {
         color: white;
     }
+
     .menuBlock {
         width: 100%;
         height: 100px;
@@ -416,6 +406,7 @@ input[type=submit]:hover {
         border-bottom-color: black;
         border-width: thin;
     }
+
     #menu {
         display: block;
         position: absolute;
@@ -453,7 +444,7 @@ input[type=submit]:hover {
         color: white;
         font-size: 40px;
     }
-    
+
     #kontaktForm {
         width: 60%
     }

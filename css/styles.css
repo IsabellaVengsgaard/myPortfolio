@@ -200,6 +200,12 @@ a {
     justify-content: center;
 }
 
+.cv h2 {
+    text-align: center;
+}
+
+
+
 
 /*---------------------contact page styles------------------------------*/
 
@@ -264,6 +270,11 @@ input[type=submit]:hover {
 }
 
 .portfolioSide h2 {
+    margin: 10px;
+}
+
+.portfolioSide img {
+    width: 400px;
     margin: 10px;
 }
 

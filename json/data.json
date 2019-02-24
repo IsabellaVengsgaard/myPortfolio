@@ -1,6 +1,26 @@
-[
+"projektObjekter"{:[
     {
-        "img": [""],
-        "title": ""
+        "img": ["\/images\/template_picture.jpg"],
+        "title": "Digital projekter"
     },
-]
+    {
+        "img": ["\/images\/template_picture.jpg"],
+        "title": "Illustrationer"
+    },
+    {
+        "img": ["\/images\/template_picture.jpg"],
+        "title": "Cinemagraph"
+    },
+    {
+        "img": ["\/images\/template_picture.jpg"],
+        "title": "Print"
+    },
+    {
+        "img": ["\/images\/template_picture.jpg"],
+        "title": "Designs"
+    },
+    {
+        "img": ["\/images\/template_picture.jpg"],
+        "title": "Videoredigering"
+    }
+]}

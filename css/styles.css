@@ -5,6 +5,10 @@
     --dark-color: rgb(84, 84, 84);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -106,6 +110,10 @@ a {
     text-align: center;
 }
 
+.isabella h1 {
+    color: white;
+}
+
 /*-------------------hero image buttons styles----------------------*/
 
 
@@ -174,23 +182,103 @@ a {
     font-size: 25px;
 }
 
-#mainAbout img{
-    width: 100%;
+.bella {
+    width: 90%;
     margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutContainer h2 {
+    text-align: center;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+
+/*---------------------contact page styles------------------------------*/
+
+.kontakth3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#kontaktForm {
+    width: 80%;
+    height: 600px;
+    background-color: var(--dark-color);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+}
+
+
+input[type=submit] {
+    border-style: solid;
+    border-color: var(--link-color);
+    border-radius: 20px;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    background-color: var(--dark-color);
+    transition: background-color 0.5s ease-out;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    text-decoration: none;
+    background-color: var(--link-color);
+    color: black;
+}
+
+/*---------------------arbejde styles------------------------------*/
+
+.portfolioSide {
+    text-align: center;
+}
+
+.portfolioSide h2 {
+    margin: 10px;
 }
 
 
 /*---------------------Footer styles------------------------------*/
 
-footer {
-    background-color: var(--dark-color);
+#footerBella {
+    background-color: rgb(84, 84, 84);
     color: whitesmoke;
     width: 100%;
     height: 200px;
     text-align: center;
 }
 
-footer h3 {
+#footerBella h3 {
     text-align: center;
     padding-top: 15px;
 }
@@ -207,13 +295,11 @@ footer h3 {
     transition: background-color 0.5s ease-out;
 }
 
-footer a:hover {
+#footerBella a:hover {
     text-decoration: none;
     background-color: var(--link-color);
     color: black;
 }
-
-
 
 .boxStyle {
     margin-left: 10px;

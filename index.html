@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Open+Sans+Condensed:300" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <!-- menu -->
         <nav id="menu">
-            <a href="#" id="active">Forside
+            <a href="#" class="active">Forside
             </a>
             <a href="arbejde.html">
                 Portfolio
@@ -35,7 +36,7 @@
 
             <div id="menumobile" class="nav">
                 <a href="#" class="close" onclick="closeSlideMenu()"><i class="fas fa-times"></i></a>
-                <a href="index.html" id="active">Forside</a>
+                <a href="index.html" class="active">Forside</a>
                 <a href="arbejde.html">Portfolio</a>
                 <a href="aboutme.html">Om&nbsp;Mig</a>
                 <a href="kontakt.html">Kontakt</a>
@@ -45,7 +46,7 @@
             <picture>
                 <source srcset="images/baggrund.jpg" media="(min-width: 1024px)">
                 <source srcset="images/baggrund-tablet.jpg" media="(min-width: 730px)">
-                <img id="bella" src="images/baggrund-mobil.jpg" alt="">
+                <img id="bella" src="images/baggrund_mobil1.jpg" alt="">
             </picture>
             <div id="heroText">
                 <div class="isabella">
@@ -66,7 +67,7 @@
         </div>
         <div class="picture"></div>
     </section>
-    <footer>
+    <footer id="footerBella">
         <h3>SAY HALLO!</h3>
         <a href="kontakt.html" class="boxStyle">Skriv til mig!</a>
         <a href="aboutme.html" class="boxStyle">Læs mit CV!</a>

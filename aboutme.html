@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <!-- menu -->
         <nav id="menu">
-            <a href="#" id="active">Forside
+            <a href="#" class="active">Forside
             </a>
             <a href="arbejde.html">
                 Portfolio
@@ -35,7 +36,7 @@
 
             <div id="menumobile" class="nav">
                 <a href="#" class="close" onclick="closeSlideMenu()"><i class="fas fa-times"></i></a>
-                <a href="index.html" id="active">Forside</a>
+                <a href="index.html" class="active">Forside</a>
                 <a href="arbejde.html">Portfolio</a>
                 <a href="aboutme.html">Om&nbsp;Mig</a>
                 <a href="kontakt.html">Kontakt</a>
@@ -47,22 +48,23 @@
                 <source srcset="images/baggrund-tablet.jpg" media="(min-width: 730px)">
                 <img id="bella" src="images/baggrund-mobilandresider.jpg" alt="">
             </picture>
-            <div id="heroText">
-
                 <h1 class="aboutIsabella">Isabella Münster Bak Vengsgaard</h1>
         </section>
-        <main id="mainAbout">
-            <img src="images/bella_about_page_picture.jpg" alt="Isabella Münster Bak Vengsgaard">
-            <article>
-                <h2>OM MIG</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nunc at egestas blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque sit amet sem ullamcorper, tempus nisl nec, scelerisque ipsum. Curabitur nec nulla eget sapien auctor mattis. Maecenas nibh odio, rhoncus vel augue et, tincidunt tempor quam. Nullam in augue ipsum. Suspendisse interdum elit in ipsum scelerisque rhoncus. Curabitur faucibus maximus eleifend. Nullam tellus nisi, sollicitudin in elit in, luctus venenatis erat.</p>
-            </article>
+        </header>
+            <div class="aboutContainer">
+                <div>
+                    <img src="images/bella_about_page_picture.jpg" alt="Isabella Münster Bak Vengsgaard" class="bella"></div>
+                <article class="articleAbout">
+                    <h2>OM MIG</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nunc at egestas blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque sit amet sem ullamcorper, tempus nisl nec, scelerisque ipsum. Curabitur nec nulla eget sapien auctor mattis. Maecenas nibh odio, rhoncus vel augue et, tincidunt tempor quam. Nullam in augue ipsum. Suspendisse interdum elit in ipsum scelerisque rhoncus. Curabitur faucibus maximus eleifend. Nullam tellus nisi, sollicitudin in elit in, luctus venenatis erat.</p>
+                </article>
+            </div>
             <article>
                 <h2>CURRICULUM VITAE</h2>
-                
+
             </article>
-        </main>
-        <footer>
+
+        <footer id="footerBella">
             <h3>SAY HALLO!</h3>
             <a href="kontakt.html" class="boxStyle">Skriv til mig!</a>
             <a href="arbejde.html" class="boxStyle">Se mit Portfolio!</a>

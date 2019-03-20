@@ -14,18 +14,18 @@
 </head>
 
 <body>
-    <header>
+    <header id="menuForside">
         <!-- menu -->
         <nav id="menu">
-            <a href="index.html" class="menuForside">Forside
+            <a href="#titleHeroImage">Forside
             </a>
-            <a href="arbejde.html" class="menuForside">
+            <a href="#portfolio">
                 Portfolio
             </a>
-            <a href="aboutme.html" class="menuForside">
-                Mit CV
+            <a href="#aboutBella">
+                Om Mig
             </a>
-            <a href="kontakt.html" class="menuForside">
+            <a href="#footerBella">
                 Kontakt
             </a>
         </nav>
@@ -36,10 +36,10 @@
 
             <div id="menumobile" class="nav">
                 <a href="#" class="close" onclick="closeSlideMenu()"><i class="fas fa-times"></i></a>
-                <a href="index.html" class="active">Forside</a>
-                <a href="arbejde.html">Portfolio</a>
-                <a href="aboutme.html">Mit&nbsp;CV</a>
-                <a href="kontakt.html">Kontakt</a>
+                <a href="#titleHeroImage">Forside</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#aboutBella">Om&nbsp;mig</a>
+                <a href="#footerBella">Kontakt</a>
             </div>
         </div>
         <section id="titleHeroImage">
@@ -64,18 +64,36 @@
     <section id="aboutBella">
         <div class="aboutMe">
             <h2>HVEM ER JEG?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nunc at egestas blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque sit amet sem ullamcorper, tempus nisl nec, scelerisque ipsum. Curabitur nec nulla eget sapien auctor mattis. Maecenas nibh odio, rhoncus vel augue et, tincidunt tempor quam. Nullam in augue ipsum. Suspendisse interdum elit in ipsum scelerisque rhoncus. Curabitur faucibus maximus eleifend. Nullam tellus nisi, sollicitudin in elit in, luctus venenatis erat.</p>
-            <a href="arbejde.html" class="boxStyle2">Mit&nbsp;arbejde</a>
+            <p></p>
         </div>
         <div class="picture"></div>
     </section>
+
+    <section class="portfolioSide" id="portfolio">
+       <img src="images/saturn_cassini_space_icon.jpg" alt="Cassini on it's way to saturn">
+       <img src="images/Infograph_grums_icon.jpg" alt="Infographic udarbejdet til virksomheden Grums">
+       <img src="images/infographic_limitless_icon.jpg" alt="Infographic udarbejdet til Limitless">
+    </section>
+
+
     <footer id="footerBella">
         <h3>SAY HALLO!</h3>
-        <div class="skrivIcon">
-            <a href="kontakt.html" class="boxStyle">Kontakt mig!</a></div>
-        <div class="footerIcons">
-            <i class="fab fa-linkedin"></i>
-        </div>
+        <section id="kontaktForm">
+            <div class="container">
+                <form action="mailto:eaaimbv@students.eaaa.dk" method="post" enctype="text/plain">
+                    <label for="fname">Navn</label>
+                    <input type="text" id="fname" name="navn" placeholder="Navn..">
+
+                    <label for="lname">E-mail</label>
+                    <input type="text" id="lname" name="email" placeholder="E-mail..">
+
+                    <label for="subject">Besked</label>
+                    <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
         <p class="footName">Isabella Münster Bak Vengsgaard - 2019</p>
     </footer>
     <!--/*bootstrap CDN*/-->

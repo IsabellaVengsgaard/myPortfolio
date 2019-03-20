@@ -14,6 +14,8 @@ function closeSlideMenu() {
     document.getElementById('contentmobile').style.marginLeft = '0';
 }
 
+
+
 fetch('json/data.json')
     .then(function (response) {
         return response.json();
